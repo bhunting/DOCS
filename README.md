@@ -1,10 +1,10 @@
-Docs
-====
+AUC Docs
+========
 
-The AUC (Durango) project/team wiki
+The AUC (Durango) project/team documentation and resources.
 
-[Tools And Resources](/ToolsAndResources.md/)
+** Useful Links
+
+* [Tools And Resources](/ToolsAndResources.md/)
 
 
-* [Projects/GPL/Readme.creole]|Gallios Plate Loader]]
-* 
