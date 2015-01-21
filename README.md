@@ -3,7 +3,7 @@ Docs
 
 The AUC (Durango) project/team wiki
 
-[ToolsAndResources.md][Tools And Resources]
+[Tools And Resources](/ToolsAndResources.md/)
 
 
 * [Projects/GPL/Readme.creole]|Gallios Plate Loader]]
