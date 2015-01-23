@@ -1,6 +1,6 @@
 # Tools And Resources
 
-This document describes tools and resources in use for development.
+This document describes machines (virtual and physical) and related resources in use for development.
 
 TODO: merge AUC-relevant info from http://svusftceq/trac/sw/wiki/AucSwMachines
 
