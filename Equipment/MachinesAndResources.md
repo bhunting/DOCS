@@ -1,4 +1,4 @@
-# Tools And Resources
+# Machines And Resources
 
 This document describes machines (virtual and physical) and related resources in use for development.
 
