@@ -19,6 +19,10 @@ The following **static IP addresses** are allocated from IT for development as o
 * **10.22.72.228** -- 
 * **10.22.72.229** -- 
 
+## Continuous Integration Tools
+
+Jenkins is accessible via webbrowser at `http://10.22.72.220:8080/`.
+
 ## Equipment/Computers
 
 * Atom x86 with Debian (development) _(by charley)_
