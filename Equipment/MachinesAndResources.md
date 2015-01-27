@@ -4,6 +4,14 @@ This document describes machines (virtual and physical) and related resources in
 
 TODO: merge AUC-relevant info from http://svusftceq/trac/sw/wiki/AucSwMachines
 
+## Shared Sw Team Data Folder
+
+The Sw Team shared data folder may be found at:
+
+* `\\BACH\\AUCNetShare`
+
+**NOTE** that the `BACH` computer is in the AUC Sw Team build area.
+
 ## IP Addresses
 
 The following **static IP addresses** are allocated from IT for development as of 20-Jan-2015 (more are available by request):
