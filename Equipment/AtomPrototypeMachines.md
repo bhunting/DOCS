@@ -1,6 +1,6 @@
 ## Network setup
 
-Specify the following in `/etc/network/interfaces`, using the appropriate number in place of `XXX` (see the list of available static IP addresses in [MachinesAndResources.md]):
+Specify the following in `/etc/network/interfaces`, using the appropriate number in place of `XXX` (see the list of available static IP addresses in (MachinesAndResources.md)):
 ```
 # Our static-address ethernet interface
 auto eth0
