@@ -23,9 +23,9 @@ The following **static IP addresses** are allocated from IT for development as o
 * **10.22.72.224** -- 
 * **10.22.72.225** -- 
 * **10.22.72.226** -- 
-* **10.22.72.227** -- 
-* **10.22.72.228** -- 
-* **10.22.72.229** -- 
+* **10.22.72.227** -- (Atom board running Debian)[AtomPrototypeMachines.md]
+* **10.22.72.228** -- (Atom board running Debian)[AtomPrototypeMachines.md]
+* **10.22.72.229** -- (Atom board running Debian)[AtomPrototypeMachines.md]
 
 ## Continuous Integration Tools
 
