@@ -23,8 +23,8 @@ The following **static IP addresses** are allocated from IT for development as o
 * **10.22.72.224** -- 
 * **10.22.72.225** -- 
 * **10.22.72.226** -- 
-* **10.22.72.227** -- AUC Gui Dev/Test (inside) [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
-* **10.22.72.228** -- AUC Gui DEMO (facing out) [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
+* **10.22.72.227** -- **AUC Gui Dev/Test** _(inside)_ [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
+* **10.22.72.228** -- **AUC Gui DEMO** _(facing out)_ [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
 * **10.22.72.229** -- [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
 
 ## Continuous Integration Tools
