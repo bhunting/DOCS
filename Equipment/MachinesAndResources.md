@@ -16,8 +16,8 @@ The Sw Team shared data folder may be found at:
 
 The following **static IP addresses** are allocated from IT for development as of 20-Jan-2015 (more are available by request):
 
-* **10.22.72.220** -- **"Debuachery"** VM, Debian x86, (running within Bach)
-* **10.22.72.221** -- 
+* **10.22.72.220** -- **"debauchery"** VM, Debian x86, (running within Bach)
+* **10.22.72.221** -- **"debaucheryOld"** VM, Debian x86, no windowing manager (running no Bach)
 * **10.22.72.222** -- 
 * **10.22.72.223** -- 
 * **10.22.72.224** -- 
