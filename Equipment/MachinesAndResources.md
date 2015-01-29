@@ -39,8 +39,8 @@ The following "generic" configurations exist:
   * Intended "target" embedded control hardware for AUC
   * Used for development, integration, GUI testing
   * Relevant System Configuration:
-    * Login username:  `dev`
-    * Login p*wd:  _SW-dept-default_
+    * **Login username:**  `dev`
+    * **Login p*wd:**  _SW-dept-default_
     * File System:
       * `/home/dev/auc/0.1/.` _-- installed AUC files_
       * `/opt/.` _-- tools, soft-linked to `dataA`_
@@ -48,16 +48,16 @@ The following "generic" configurations exist:
 * **"Debauchery"** -- Debian 32-bit x86 Virtual Machine (VM), multi-core
   * Intended for development in a Virtual Machine (VM) for products that target the **Atom** system
   * Relevant System Configuration:
-    * Login username:  `dev`
-    * Login p*wd:  _SW-dept-default_
+    * **Login username:**  `dev`
+    * **Login p*wd:**  _SW-dept-default_
     * File System:
       * `/opt/.` _-- tools, soft-linked to `dataA`_
       * `/auc/0.1/.` _-- build products, including to-be-installed to Atom, soft-linked to `dataA/auc/.`_
       * `/src/.` _-- source for AUC, soft-linked to `dataA/src/.`_
 
-### 
-
 ## Actual Equipment/Computers
 
-* Atom x86 with Debian (development) _(by charley)_
-* Atom x86 with Debian (demo) _(by charley)_
+* **Atom** (for development) _(AUC farm, inside cube)_
+* **Atom** (for GUI demo) _(AUC farm, facing out)_
+* **Debauchery** (for VM development) _(on each developer's laptop)_
+ 
