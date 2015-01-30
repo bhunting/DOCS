@@ -1,5 +1,15 @@
 #!/bin/bash
 
+### BEGIN INIT INFO
+# Provides:          jenkins
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2
+# Default-Stop:      0 1 3 4 5 6
+# Short-Description: Start jenkins at boot time
+# Description:       Enable jenkins CI service.
+### END INIT INFO
+
 DESC="Jenkins CI Server"
 NAME=jenkins
 PIDFILE=/var/run/$NAME.pid
