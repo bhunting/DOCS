@@ -1,0 +1,82 @@
+Make sure the following tools are installed as they are required to build the compiler.
+
+FYI : need gcc and g++ installed
+apt-get install gcc
+apt-get install g++
+apt-get install zlib1g-dev
+apt-get install libmpfr-dev libgmp3-dev libmpc-dev flex bison
+
+
+Binutils only needs a C compiler.  In the past, gcc used to be able 
+to compile g++ using a C compiler, but that changed : probably with gcc-4.8.
+
+
+Grab the gcc / g++ tarballs from
+
+http://www.gnu.org/software/software.html
+http://www.gnu.org/software/gcc/
+
+Expand the tarball in a working directory
+Make a gcc-build directory for the gcc build objects
+
+aucuser@debauchery:/dataA/tools/gcc$ pwd
+/dataA/tools/gcc
+aucuser@debauchery:/dataA/tools/gcc$ ls -l
+total 221464
+drwxr-xr-x 33 aucuser aucuser      4096 May 22  2014 gcc-4.8.3
+-rw-r--r--  1 aucuser aucuser 110834231 Jan 29 17:14 gcc-4.8.3.tar.gz
+drwxr-xr-x 34 aucuser aucuser      4096 Oct 30 03:35 gcc-4.9.2
+-rw-r--r--  1 aucuser aucuser 115686453 Jan 29 12:44 gcc-4.9.2.tar.gz
+drwxr-xr-x 19 aucuser aucuser      4096 Jan 30 10:48 gcc-build
+aucuser@debauchery:/dataA/tools/gcc$
+
+cd into build directory (gcc-build) and run as appropriate
+
+../gcc-4.9.2/configure 
+--prefix=/opt/gcc/4.9.2
+--enable-languages=c,c++ 
+--enable-threads=posix 
+--program-suffix=4.9 
+--without-included-gettext 
+--with-system-zlib 
+--with-tune=generic 
+--disable-checking 
+--enable-multiarch
+--enable-shared 
+--with-gmp=/usr/local/lib 
+--with-mpc=/usr/lib 
+--with-mpfr=/usr/lib
+
+After the configuration works then run make -j8 to build the compiler
+
+After the compilation is successfull run make install to install the new 
+compiler to /opt/gcc/4.9.2 (or in prefix dir as appropriate)
+
+Result of install yields the following message:
+
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /opt/gcc/4.9.2/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+
+
+
+
+
+
+
+
+
