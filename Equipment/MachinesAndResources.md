@@ -19,7 +19,7 @@ The following **static IP addresses** are allocated from IT for development as o
 * **10.22.72.220** -- **"debauchery"** VM, Debian x86, (running within Bach)
 * **10.22.72.221** -- 
 * **10.22.72.222** -- 
-* **10.22.72.223** -- 
+* **10.22.72.223** -- Charley's **debaucherycsb** copy (Debian x86)
 * **10.22.72.224** -- Dennis's **"debauchery"** copy (Debian x86)
 * **10.22.72.225** -- Kyle's **"debauchery"** copy (Debian x86)
 * **10.22.72.226** -- Brad's **"debauchery"** copy (Debian x86)
