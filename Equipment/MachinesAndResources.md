@@ -23,9 +23,9 @@ The following **static IP addresses** are allocated from IT for development as o
 * **10.22.72.224** -- Dennis's **"debauchery"** copy (Debian x86)
 * **10.22.72.225** -- Kyle's **"debauchery"** copy (Debian x86)
 * **10.22.72.226** -- Brad's **"debauchery"** copy (Debian x86)
-* **10.22.72.227** -- **AUC Gui Dev/Test** _(AUC farm, inside)_ _(Login: aucuser, P*wd: aucuser)_ [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
-* **10.22.72.228** -- **AUC Gui DEMO** _(AUC farm, facing out)_ _(Login: aucuser, P*wd: aucuser)_ [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
-* **10.22.72.229** -- **AUC Fuge-Control Dev/Test** _(by Kyle)_ _(Login: aucuser, P*wd: aucuser)_ [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
+* **10.22.72.227** -- **AUC Gui Dev/Test** _(AUC farm, inside)_ _(Login: aucuser, P*wd: aucuser, su: sw-dept-standard)_ [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
+* **10.22.72.228** -- **AUC Gui DEMO** _(AUC farm, facing out)_ _(Login: aucuser, P*wd: aucuser, su: sw-dept-standard)_ [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
+* **10.22.72.229** -- **AUC Fuge-Control Dev/Test** _(by Kyle)_ _(Login: aucuser, P*wd: aucuser, su: sw-dept-standard)_ [Atom board running Debian](AtomPrototypeMachines.md) _(assigned 27-Jan-2015)_
 
 ## Continuous Integration Tools
 
