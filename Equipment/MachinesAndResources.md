@@ -12,6 +12,13 @@ The Sw Team shared data folder may be found at:
 
 **NOTE** that the `BACH` computer is in the AUC Sw Team build area.
 
+## Accounts
+
+### Accounts on GitHub
+
+* **jenkins** -- **Passw*d:** _sw-dept-standard_ ... For Jenkins continuous integration server
+ 
+
 ## IP Addresses
 
 The following **static IP addresses** are allocated from IT for development as of 20-Jan-2015 (more are available by request):
