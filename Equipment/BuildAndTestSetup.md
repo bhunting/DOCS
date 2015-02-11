@@ -14,3 +14,10 @@ running tests (such as those built using the `gtest` library).
  * Added symlink: `ln -s /opt/cmake/3.1.1/bin/cmake /usr/local/bin/build`
 
 ## GTest setup
+
+`GTest` is a C++ unit-testing library developed as open-source model
+sponsored by Google.
+
+Setup instructions followed this:
+
+* [getting-started-with-google-test-on-ubuntu](http://www.thebigblob.com/getting-started-with-google-test-on-ubuntu/)
