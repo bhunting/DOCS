@@ -1,6 +1,48 @@
 # Development Build And Test Setup
 
-##CMake setup
+---
+## Our Development Configuration
+
+We use the following:
+
+* `CMake` -- configuration management: build, test-runner, install-builder
+* `GTest` -- C++ unit testing
+* `make, ninja` -- back-end for _CMake-build_ operations
+* `Jenkins` -- continuous integration web server
+* `gcc` -- C++ compiler
+
+---
+# Our Workspace Organization
+
+Workspace hierarchy is:
+
+```
+   /AUC/Durango/                              <== Our ".git" root-dir
+                .git/                         <== ".git" repository for 
+                AucGui/                       <== (module)
+                Common/                       <== (module)
+                ControllerHub/                <== (module)
+                ScienceModules/               <== (module)
+                               CMakelists.txt <== THIS FILE
+                CMakelists.txt                <== ROOT "cmake" file
+        dist/.                                <== "peer" for "distribution" products
+        obj/.                                 <== "obj" intermediate build products
+```
+Also note:
+```
+  /usr/src/gtest/.                            <== where `gtest` installed
+  /usr/lib                                    <== where `libgtest.a`, `libgtest_main.a` linked
+  /opt/cmake/3.1.1/bin/.                      <== where `cmake` installed
+  /opt/gcc/4.8.3/bin/.                        <== where `gcc` installed
+  /opt/gcc/4.9.2/bin/.                        <== where `gcc` installed
+  /opt/ninja/1.5.3/.                          <== where `ninja` installed
+```
+
+
+---
+## Install Tools
+
+### Install:  CMake
 
 `CMake` is a "makefile-generator" build tool that manages our
 build configuration, and enables build-and-test through back-end
@@ -13,7 +55,7 @@ running tests (such as those built using the `gtest` library).
    *  `./bootstrap --prefix=/opt/cmake/3.1.1 -- -DCMAKE_USE_OPENSSL=ON`
  * Added symlink: `ln -s /opt/cmake/3.1.1/bin/cmake /usr/local/bin/build`
 
-## GTest setup
+### Install:  GTest
 
 `GTest` is a C++ unit-testing library developed as open-source
 sponsored by Google.
