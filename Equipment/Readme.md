@@ -32,7 +32,7 @@ used for AUC development.
 ## Issue Tracking
 
 * **YOUTrack** (for issue-tracking, milestone planning, workflow) [[http://www.jetbrains.com/youtrack/]]
-* **Trac** //(LEGACY, PREFER {{{github}}})// (for wiki, issue-tracking) [[http://trac.edgewall.org/]]
+* **Trac** //(LEGACY, PREFER `github`)// (for wiki, issue-tracking) [[http://trac.edgewall.org/]]
 
 == Test / Code-Coverage
 
