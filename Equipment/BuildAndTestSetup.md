@@ -18,6 +18,23 @@ running tests (such as those built using the `gtest` library).
 `GTest` is a C++ unit-testing library developed as open-source model
 sponsored by Google.
 
-Setup instructions followed this:
+Setup instructions followed this procedure:
 
-* [getting-started-with-google-test-on-ubuntu](http://www.thebigblob.com/getting-started-with-google-test-on-ubuntu/)
+* [Getting Started with Google Test (GTest) On Ubuntu](http://www.thebigblob.com/getting-started-with-google-test-on-ubuntu/)
+
+* Install `gtest` development package (by default installs to `/usr/src/gtest`):
+  ```
+  sudo apt-get install libgtest-dev
+  ```
+* Build and install:
+  ```
+  sudo apt-get install cmake # install cmake
+  cd /usr/src/gtest
+  sudo cmake CMakeLists.txt
+  sudo make
+  ```
+* Symlink to `/usr/lib`:
+  ```
+  ln -s /usr/src/gtest/libgtest.a /usr/lib/libgtest.a
+  ln -s /usr/src/gtest/libgtest_main.a /usr/lib/libgtest_main.a
+  ```
