@@ -16,6 +16,7 @@ PIDFILE=/var/run/$NAME.pid
 RUN_AS=jenkins
 export JAVAHOME=/opt/jre/jre1.7.0_76
 export CLASSPATH=/opt/jre/jre1.7.0_76
+export JENKINS_BASE=/opt/jenkins
 COMMAND=/opt/jre/java -- -jar /opt/jenkins/jenkins.war
 
 d_start() {
