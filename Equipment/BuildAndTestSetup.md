@@ -26,6 +26,8 @@ Workspace hierarchy is:
                                CMakeLists.txt <== module `cmake` file
                 ControllerHub/                <== (module)
                                CMakeLists.txt <== module `cmake` file
+                OurGit/                       <== (module)
+                               CMakeLists.txt <== module `cmake` file
                 ScienceModules/               <== (module)
                                CMakeLists.txt <== module `cmake` file
         dist/.                                <== "peer" for "distribution" products
@@ -39,7 +41,6 @@ Also note:
   /opt/gcc/4.8.3/bin/.                        <== where `gcc` installed
   /opt/gcc/4.9.2/bin/.                        <== where `gcc` installed
   /opt/gcc-arm/.../bin/.                      <== where `gcc-arm` installed
-  /opt/ninja/1.5.3/.                          <== where `ninja` installed
   /opt/jenkins/jenkins.1.597.war              <== where `jenkins` installed
   /opt/jre/jre1.7.0_76/bin/.                  <== where `jre` installed
   /opt/ninja/1.5.3/.                          <== where `ninja` installed
