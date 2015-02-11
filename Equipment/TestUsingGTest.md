@@ -246,6 +246,7 @@ version (as of June-2014) is `GTest 1.7.0`.
 
 If you have trouble setting-up, compiling, or installing `gtest`, a web
 search may help.  For example:
+
 1. Using Google Test in Visual C++ 2012: [http:_asawicki.info/news_1561_using_google_test_in_visual_c_2012.html](http:_asawicki.info/news_1561_using_google_test_in_visual_c_2012.html)
 1. (From GoogleTest FAQ), "I am building my project with Google Test in Visual Studio and all I'm getting is a bunch of linker errors (or warnings). Help!": [https:_code.google.com/p/googletest/wiki/FAQ#I_am_building_my_project_with_Google_Test_in_Visual_Studio_and_a]([https:_code.google.com/p/googletest/wiki/FAQ#I_am_building_my_project_with_Google_Test_in_Visual_Studio_and_a)
 
