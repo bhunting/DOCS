@@ -28,24 +28,24 @@ as a `*.exe` on MS-Windows).
 Filenames for gtests conform to a "standard-convention" to enable better
 "globbing/selection" of many test-executables by the "test-runner":
 
-* {{{gt}}} -- indicates this uses "Google-Test" (GTest) technology
-* {{{1}}} -- "Digit" for "execution-level", which implies "time" or "processing-effort"
+* `gt` -- indicates this uses "Google-Test" (GTest) technology
+* `1` -- "Digit" for "execution-level", which implies "time" or "processing-effort"
 required by the system to execute this test
-  * {{{0}}} -- "Very light/fast" test (e.g., "Smoke-test" or "turn-on" test)
-  * {{{1}}} -- "Light/fast" test
-  * {{{2}}} -- "Medium-speed" test
-  * {{{3}}} -- "Long-speed" or "expensive" test
+  * `0` -- "Very light/fast" test (e.g., "Smoke-test" or "turn-on" test)
+  * `1` -- "Light/fast" test
+  * `2` -- "Medium-speed" test
+  * `3` -- "Long-speed" or "expensive" test
   * ...
-  * {{{9}}} -- "Exhaustive" or "Complete" or "Comprehensively-expensive" test
+  * `9` -- "Exhaustive" or "Complete" or "Comprehensively-expensive" test
 * Target/Category -- The "type" or "target" or "category" for the environment
 or platform for this test to be executed.  Example:
-  * {{{g}}} -- "Generic":  Test that has NO SYSTEM SIDE-EFFECTS
-  * {{{f}}} -- "File-System":  Test that accesses the file-system (for read and/or write)
-  * {{{e}}} -- "Emulator":  Test that requires running (hardware) emulators
-  * {{{h}}} -- "Hardware":  Test that requires running hardware/devices (attached)
+  * `g` -- "Generic":  Test that has NO SYSTEM SIDE-EFFECTS
+  * `f` -- "File-System":  Test that accesses the file-system (for read and/or write)
+  * `e` -- "Emulator":  Test that requires running (hardware) emulators
+  * `h` -- "Hardware":  Test that requires running hardware/devices (attached)
 
 Example:
-{{{
+`
   gt1g_MyTest0_MyTestCases.cpp
   gt1g_MyTest0_MyTestCases.exe
                ^^^^^^^^^^^
@@ -58,11 +58,11 @@ Example:
     level
   ^^
   gtest
-}}}
+`
 
 ### Name:  Test Fixtures, Test Cases, Test Names
 
-Recall that {{{gtest}}} groups tests in a source-code file under a
+Recall that `gtest` groups tests in a source-code file under a
 "test-case" or "test-fixture".  Thus, the "test-case" is //more-generic//
 than the "test", which is //more-specific//.
 
@@ -86,37 +86,37 @@ Thus, an example of test aggregation can be:
   * //test0//
   * //test1//
 
-Note that consistent with {{{gtest}}} documentation, underscores {{{_}}} are not
+Note that consistent with `gtest` documentation, underscores `_` are not
 permitted in names for test-fixtures, test-cases, and tests.
 
-Recall that a "test-fixture" is implemented as a user-defined {{{class}}} (which
-derives from {{{gtest}}}-specific classes to integrate into the {{{gtest}}} infrastructure).
+Recall that a "test-fixture" is implemented as a user-defined `class` (which
+derives from `gtest`-specific classes to integrate into the `gtest` infrastructure).
 Thus, the "test-fixture" has a naming-convention consistent with that for
-a {{{class}}} (user-defined type).
+a `class` (user-defined type).
 
 Further, because "test-fixtures" and "test-cases" are functionally equivolent,
 they have similar naming-conventions.
 
-However, because {{{gtest}}} intends for the user to "glob" by "name" for 
+However, because `gtest` intends for the user to "glob" by "name" for 
 test-fixtures, test-cases, and tests, we distinguish between "test-fixtures" 
 and "test-cases".
 
 The following prefixes are used:
 
-* {{{Tc}}} -- indicates prefix for any "test-case"
-* {{{Tf}}} -- indicates prefix for any "test-fixture"
+* `Tc` -- indicates prefix for any "test-case"
+* `Tf` -- indicates prefix for any "test-fixture"
 
 Because the "test" is like a "function", it has naming conventions similar
 to that for functions:
 
-* {{{test}}} -- indicates prefix for any "test"
+* `test` -- indicates prefix for any "test"
 
 ## Using GTest
 
 ### Writing An Executable Test
 
 Our "gtest-use-convention" is established in our custom-header-file 
-added at:  {{{/workspace/3rd/GTest/inc/MyGTest.hpp}}}
+added at:  `/workspace/3rd/GTest/inc/MyGTest.hpp`
 
 An example source-code-test is described in that file, and may look
 similar to:
@@ -170,10 +170,10 @@ More information on writing tests is documented in the header:
 
 ### Placement Of Test-Source-Code In The Workspace
 
-Workspace convention places "test-source-code" in a {{{/Unit/.}}} subdirectory
+Workspace convention places "test-source-code" in a `/Unit/.` subdirectory
 //as close to the source-code under test as possible.//
 
-For example, the following locations tend to hold {{{gtest}}} tests:
+For example, the following locations tend to hold `gtest` tests:
 
 ```
   /workspace/MyPackage/MyLibrary/Unit/.
@@ -184,10 +184,10 @@ For example, the following locations tend to hold {{{gtest}}} tests:
 
 ### Building GTest Executable Tests
 
-Building test-executables that use {{{gtest}}} requires the {{{INCLUDE_PATH}}} 
-and {{{LIB_PATH}}} be updated to include the Google Test libraries.
+Building test-executables that use `gtest` requires the `INCLUDE_PATH` 
+and `LIB_PATH` be updated to include the Google Test libraries.
 
-For use in SWT, update the {{{Build.py}}} for compiling/linking test
+For use in SWT, update the `Build.py` for compiling/linking test
 executables:
 
 ```
@@ -226,25 +226,25 @@ Use the `-h` flag to get a complete usage string for the test runner.
 
 ## Setup/Install of GTest
 
-We download, build, and install GTest into {{{/workspace/3rd/.}}}  The current
-version (as of June-2014) is {{{GTest 1.7.0}}}.
+We download, build, and install GTest into `/workspace/3rd/.`  The current
+version (as of June-2014) is `GTest 1.7.0`.
 
 1. **Download Source:**Google Test (GTest) Project Home:  [[https://code.google.com/p/googletest/]]
   1.* **Unzip/Install:** To project workspace:
-    1. {{{/workspace/3rd/GTest/.}}}
-    1. {{{/workspace/3rd/GTest/inc/.}}}
-    1. {{{/workspace/3rd/GTest/lib/.}}}
+    1. `/workspace/3rd/GTest/.`
+    1. `/workspace/3rd/GTest/inc/.`
+    1. `/workspace/3rd/GTest/lib/.`
   1. **Build Settings:**
-    1. We use the Microsoft MSVC {{{MD}}} library (Mutli-threaded DLL)
-    1. Rename the {{{DEBUG}}} library target to append {{{_d}}} instead of the
-      default which appends {{{d}}} (This is a simplification for our use of {{{SWT}}},
-      alternatively there are other work-arounds in the {{{Build.py}}} for unit tests.)
-      1. {{{gtestd.lib}}} => {{{gtest_d.lib}}}
-      1. {{{gtest_main-mdd.lib}}} => {{{gtest_main-md_d.lib}}}
+    1. We use the Microsoft MSVC `MD` library (Mutli-threaded DLL)
+    1. Rename the `DEBUG` library target to append `_d` instead of the
+      default which appends `d` (This is a simplification for our use of `SWT`,
+      alternatively there are other work-arounds in the `Build.py` for unit tests.)
+      1. `gtestd.lib` => `gtest_d.lib`
+      1. `gtest_main-mdd.lib` => `gtest_main-md_d.lib`
 
 ### Resources
 
-If you have trouble setting-up, compiling, or installing {{{gtest}}}, a web
+If you have trouble setting-up, compiling, or installing `gtest`, a web
 search may help.  For example:
 1. Using Google Test in Visual C++ 2012: [[http://asawicki.info/news_1561_using_google_test_in_visual_c_2012.html]]
 1. (From GoogleTest FAQ), "I am building my project with Google Test in Visual Studio and all I'm getting is a bunch of linker errors (or warnings). Help!": [[https://code.google.com/p/googletest/wiki/FAQ#I_am_building_my_project_with_Google_Test_in_Visual_Studio_and_a]]
