@@ -3,9 +3,13 @@
 These machines, resources, software tools, and other equipment are
 used for AUC development.
 
+## Our Development Workspace
+
+* [Our Development Workspace](OurDevelopmentWorkspace.md)
+
 ## Equipment, Machines, Resources
 
-* [MachinesAndResources.md](MachinesAndResources.md)
+* [Machines And Resources](MachinesAndResources.md)
 
 
 ## Tools 
