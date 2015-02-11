@@ -10,7 +10,7 @@ This should no longer be an issue if we update to version 1.7.11 or later. See h
 
  * `git config --global push.default upstream`
 
-##Pruning deleted branches on a pull
+##Pruning deleted branches on a pull or fetch
 
 See http://stackoverflow.com/questions/18308535/automatic-prune-with-git-fetch-or-pull
 
