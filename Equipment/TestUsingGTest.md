@@ -45,7 +45,7 @@ or platform for this test to be executed.  Example:
   * `h` -- "Hardware":  Test that requires running hardware/devices (attached)
 
 Example:
-`
+```
   gt1g_MyTest0_MyTestCases.cpp
   gt1g_MyTest0_MyTestCases.exe
                ^^^^^^^^^^^
@@ -58,7 +58,7 @@ Example:
     level
   ^^
   gtest
-`
+```
 
 ### Name:  Test Fixtures, Test Cases, Test Names
 
