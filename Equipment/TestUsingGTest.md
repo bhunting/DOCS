@@ -226,11 +226,17 @@ Use the `-h` flag to get a complete usage string for the test runner.
 
 ## Setup/Install of GTest
 
+### For the AUC project on Linux:
+
+* [Software Tools (gcc)](Tools.md)
+
+### For Astrios on Windows:
+
 We download, build, and install GTest into `/workspace/3rd/.`  The current
 version (as of June-2014) is `GTest 1.7.0`.
 
-1. **Download Source:**Google Test (GTest) Project Home:  [https:_code.google.com/p/googletest/](https:_code.google.com/p/googletest/)
-  1.* **Unzip/Install:** To project workspace:
+1. **Download Source:** Google Test (GTest) Project Home: [https:_code.google.com/p/googletest/](https:_code.google.com/p/googletest/)
+  1. **Unzip/Install:** To project workspace:
     1. `/workspace/3rd/GTest/.`
     1. `/workspace/3rd/GTest/inc/.`
     1. `/workspace/3rd/GTest/lib/.`
