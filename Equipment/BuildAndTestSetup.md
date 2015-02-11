@@ -12,7 +12,7 @@ We use the following:
 * `gcc` -- C++ compiler
 
 ---
-# Our Workspace Organization
+## Our Workspace Organization
 
 Workspace hierarchy is:
 
