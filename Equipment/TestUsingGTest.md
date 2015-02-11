@@ -15,7 +15,7 @@ This implies that tests are defined (in decreasing order of preference):
 
 1. With the library (e.g., _"unit-tests"_)
 1. With the package (e.g., _"functional tests across libraries in the package"_)
-1. With the workspace (e.g., _"functional tests across-packages")
+1. With the workspace (e.g., _"functional tests across-packages"_)
 
 ## Names:  Files, Test Fixtures/Cases, Tests
 
@@ -122,43 +122,43 @@ An example source-code-test is described in that file, and may look
 similar to:
 
 ```
-  _ FILE: gt1g_MyTest0_MyTestCases.cpp
-  _
+  // FILE: gt1g_MyTest0_MyTestCases.cpp
+  //
   #include "CppFix.hpp"
 
   #include "MyGTest.hpp"
 
-  _------------------------------------------------------------------------
-  _ Define our "main()"
-  _------------------------------------------------------------------------
+  //------------------------------------------------------------------------
+  // Define our "main()"
+  //------------------------------------------------------------------------
   MY_GTEST_MAIN_PROTOTYPE
   {
     MY_GTEST_MAIN_BODY;
   } _ <==SET BREAKPOINT HERE
-  _------------------------------------------------------------------------
-  _------------------------------------------------------------------------
+  //------------------------------------------------------------------------
+  //------------------------------------------------------------------------
 
-  _------------------------------------------------------------------------
-  _ TESTS (...from here to the rest of the file...)
-  _------------------------------------------------------------------------
+  //------------------------------------------------------------------------
+  // TESTS (...from here to the rest of the file...)
+  //------------------------------------------------------------------------
 
-  _ This test confirms integral values are equivolent.
-  _
+  // This test confirms integral values are equivolent.
+  //
   TEST(TcMyTestCaseName, testNumsEqual0)
   {
-    _ We "expect" (42 == 42)
+    // We "expect" (42 == 42)
     EXPECT_EQ(42, 42);   _ WILL PASS
-    _ We "expect" (2 == 3)
+    // We "expect" (2 == 3)
     EXPECT_EQ(2, 3);     _ WILL FAIL
   }
 
-  _ This test confirms string values are equivolent.
-  _
+  // This test confirms string values are equivolent.
+  //
   TEST(TcMyTestCaseName, testStrsEqual0)
   {
-    _ We "expect" ("hello" == "hello")
+    // We "expect" ("hello" == "hello")
     EXPECT_STREQ("hello", "hello");   _ WILL PASS
-    _ We "expect" ("hello" == "goodbye")
+    // We "expect" ("hello" == "goodbye")
     EXPECT_STREQ("hello", "goodbye"); _ WILL FAIL
   }
 ```
@@ -229,7 +229,7 @@ Use the `-h` flag to get a complete usage string for the test runner.
 We download, build, and install GTest into `/workspace/3rd/.`  The current
 version (as of June-2014) is `GTest 1.7.0`.
 
-1. **Download Source:**Google Test (GTest) Project Home:  [[https:_code.google.com/p/googletest/]]
+1. **Download Source:**Google Test (GTest) Project Home:  [https:_code.google.com/p/googletest/](https:_code.google.com/p/googletest/)
   1.* **Unzip/Install:** To project workspace:
     1. `/workspace/3rd/GTest/.`
     1. `/workspace/3rd/GTest/inc/.`
@@ -246,6 +246,6 @@ version (as of June-2014) is `GTest 1.7.0`.
 
 If you have trouble setting-up, compiling, or installing `gtest`, a web
 search may help.  For example:
-1. Using Google Test in Visual C++ 2012: [[http:_asawicki.info/news_1561_using_google_test_in_visual_c_2012.html]]
-1. (From GoogleTest FAQ), "I am building my project with Google Test in Visual Studio and all I'm getting is a bunch of linker errors (or warnings). Help!": [[https:_code.google.com/p/googletest/wiki/FAQ#I_am_building_my_project_with_Google_Test_in_Visual_Studio_and_a]]
+1. Using Google Test in Visual C++ 2012: [http:_asawicki.info/news_1561_using_google_test_in_visual_c_2012.html](http:_asawicki.info/news_1561_using_google_test_in_visual_c_2012.html)
+1. (From GoogleTest FAQ), "I am building my project with Google Test in Visual Studio and all I'm getting is a bunch of linker errors (or warnings). Help!": [https:_code.google.com/p/googletest/wiki/FAQ#I_am_building_my_project_with_Google_Test_in_Visual_Studio_and_a]([https:_code.google.com/p/googletest/wiki/FAQ#I_am_building_my_project_with_Google_Test_in_Visual_Studio_and_a)
 
