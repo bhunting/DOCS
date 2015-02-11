@@ -33,7 +33,6 @@ used for AUC development.
 
 * **YOUTrack** (for issue-tracking, milestone planning, workflow) [[http://www.jetbrains.com/youtrack/]]
 * **Trac** //(LEGACY, PREFER {{{github}}})// (for wiki, issue-tracking) [[http://trac.edgewall.org/]]
-* 
 
 == Test / Code-Coverage
 
@@ -41,15 +40,15 @@ used for AUC development.
 * **Squish** (for embedded unit/functional/GUI testing) [http://www.froglogic.com/squish/gui-testing/]()
 * **CoCo** (for embedded unit/functional/GUI code-coverage analysis) [http://www.froglogic.com/squish/coco/]()
 * **GoogleTest** (for unit tests) [https://code.google.com/p/googletest/]()
-  ** **Our GoogleTest (GTest) Conventions:** [Our GTest Conventions](TestUsingGTest.md)
+  * **Our GoogleTest (GTest) Conventions:** [Our GTest Conventions](TestUsingGTest.md)
 
-== Documentation
+## Documentation
 
 * **Doxygen** (for source-code comment extraction) [http://www.stack.nl/~dimitri/doxygen/]()
 * **wkhtmltopdf** (for HTML-to-PDF conversion) [http://code.google.com/p/wkhtmltopdf/]()
 * **WebSequenceDiagrams** (for text-to-diagram generation through GitHub) [http://www.websequencediagrams.com/]()
 
-== Installer
+## Installer
 
 * **Nullsoft Scriptable Install System (NSIS)** (for creating self-extracting installation utilities) [http://nsis.sourceforge.net/Main_Page]()
 * **Qt Installer Framework** (being considered as of June-2014 to replace NSIS) [http://qt-project.org/wiki/Qt-Installer-Framework]()
