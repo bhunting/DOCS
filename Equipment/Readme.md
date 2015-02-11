@@ -32,9 +32,9 @@ used for AUC development.
 ## Issue Tracking
 
 * **YOUTrack** (for issue-tracking, milestone planning, workflow) [[http://www.jetbrains.com/youtrack/]]
-* **Trac** //(LEGACY, PREFER `github`)// (for wiki, issue-tracking) [[http://trac.edgewall.org/]]
+* **Trac** _(LEGACY, PREFER `github`)_ (for wiki, issue-tracking) [[http://trac.edgewall.org/]]
 
-== Test / Code-Coverage
+## Test / Code-Coverage
 
 * **TestComplete** (for GUI testing) [http://smartbear.com/products/qa-tools/automated-testing-tools]()
 * **Squish** (for embedded unit/functional/GUI testing) [http://www.froglogic.com/squish/gui-testing/]()
