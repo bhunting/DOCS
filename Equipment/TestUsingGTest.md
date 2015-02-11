@@ -13,9 +13,9 @@ relies upon "test-runners" to execute and aggregate the results of test executio
 Our tests are defined "at-the-closest-point-possible" to the code-under-test.
 This implies that tests are defined (in decreasing order of preference):
 
-1. With the library (e.g., //"unit-tests"//)
-1. With the package (e.g., //"functional tests across libraries in the package"//)
-1. With the workspace (e.g., //"functional tests across-packages")
+1. With the library (e.g., _"unit-tests"_)
+1. With the package (e.g., _"functional tests across libraries in the package"_)
+1. With the workspace (e.g., _"functional tests across-packages")
 
 ## Names:  Files, Test Fixtures/Cases, Tests
 
@@ -63,8 +63,8 @@ Example:
 ### Name:  Test Fixtures, Test Cases, Test Names
 
 Recall that `gtest` groups tests in a source-code file under a
-"test-case" or "test-fixture".  Thus, the "test-case" is //more-generic//
-than the "test", which is //more-specific//.
+"test-case" or "test-fixture".  Thus, the "test-case" is _more-generic_
+than the "test", which is _more-specific_.
 
 Further, the "test-case" may optionally be replaced by a user-defined
 class called a "test-fixture".  Thus, the "test-case" and "test-fixture" 
@@ -73,18 +73,18 @@ these are similar.
 
 Thus, an example of test aggregation can be:
 
-* //test-case0//
-  * //test0//
-  * //test1//
-  * //test2//
-* //test-case1//
-  * //test0//
-  * //test1//
-* //test-fixture0//
-  * //test0//
-* //test-fixture1//
-  * //test0//
-  * //test1//
+* _test-case0_
+  * _test0_
+  * _test1_
+  * _test2_
+* _test-case1_
+  * _test0_
+  * _test1_
+* _test-fixture0_
+  * _test0_
+* _test-fixture1_
+  * _test0_
+  * _test1_
 
 Note that consistent with `gtest` documentation, underscores `_` are not
 permitted in names for test-fixtures, test-cases, and tests.
@@ -122,44 +122,44 @@ An example source-code-test is described in that file, and may look
 similar to:
 
 ```
-  // FILE: gt1g_MyTest0_MyTestCases.cpp
-  //
+  _ FILE: gt1g_MyTest0_MyTestCases.cpp
+  _
   #include "CppFix.hpp"
 
   #include "MyGTest.hpp"
 
-  //------------------------------------------------------------------------
-  // Define our "main()"
-  //------------------------------------------------------------------------
+  _------------------------------------------------------------------------
+  _ Define our "main()"
+  _------------------------------------------------------------------------
   MY_GTEST_MAIN_PROTOTYPE
   {
     MY_GTEST_MAIN_BODY;
-  } // <==SET BREAKPOINT HERE
-  //------------------------------------------------------------------------
-  //------------------------------------------------------------------------
+  } _ <==SET BREAKPOINT HERE
+  _------------------------------------------------------------------------
+  _------------------------------------------------------------------------
 
-  //------------------------------------------------------------------------
-  // TESTS (...from here to the rest of the file...)
-  //------------------------------------------------------------------------
+  _------------------------------------------------------------------------
+  _ TESTS (...from here to the rest of the file...)
+  _------------------------------------------------------------------------
 
-  // This test confirms integral values are equivolent.
-  //
+  _ This test confirms integral values are equivolent.
+  _
   TEST(TcMyTestCaseName, testNumsEqual0)
   {
-    // We "expect" (42 == 42)
-    EXPECT_EQ(42, 42);   // WILL PASS
-    // We "expect" (2 == 3)
-    EXPECT_EQ(2, 3);     // WILL FAIL
+    _ We "expect" (42 == 42)
+    EXPECT_EQ(42, 42);   _ WILL PASS
+    _ We "expect" (2 == 3)
+    EXPECT_EQ(2, 3);     _ WILL FAIL
   }
 
-  // This test confirms string values are equivolent.
-  //
+  _ This test confirms string values are equivolent.
+  _
   TEST(TcMyTestCaseName, testStrsEqual0)
   {
-    // We "expect" ("hello" == "hello")
-    EXPECT_STREQ("hello", "hello");   // WILL PASS
-    // We "expect" ("hello" == "goodbye")
-    EXPECT_STREQ("hello", "goodbye"); // WILL FAIL
+    _ We "expect" ("hello" == "hello")
+    EXPECT_STREQ("hello", "hello");   _ WILL PASS
+    _ We "expect" ("hello" == "goodbye")
+    EXPECT_STREQ("hello", "goodbye"); _ WILL FAIL
   }
 ```
 
@@ -171,7 +171,7 @@ More information on writing tests is documented in the header:
 ### Placement Of Test-Source-Code In The Workspace
 
 Workspace convention places "test-source-code" in a `/Unit/.` subdirectory
-//as close to the source-code under test as possible.//
+_as close to the source-code under test as possible._
 
 For example, the following locations tend to hold `gtest` tests:
 
@@ -229,7 +229,7 @@ Use the `-h` flag to get a complete usage string for the test runner.
 We download, build, and install GTest into `/workspace/3rd/.`  The current
 version (as of June-2014) is `GTest 1.7.0`.
 
-1. **Download Source:**Google Test (GTest) Project Home:  [[https://code.google.com/p/googletest/]]
+1. **Download Source:**Google Test (GTest) Project Home:  [[https:_code.google.com/p/googletest/]]
   1.* **Unzip/Install:** To project workspace:
     1. `/workspace/3rd/GTest/.`
     1. `/workspace/3rd/GTest/inc/.`
@@ -246,6 +246,6 @@ version (as of June-2014) is `GTest 1.7.0`.
 
 If you have trouble setting-up, compiling, or installing `gtest`, a web
 search may help.  For example:
-1. Using Google Test in Visual C++ 2012: [[http://asawicki.info/news_1561_using_google_test_in_visual_c_2012.html]]
-1. (From GoogleTest FAQ), "I am building my project with Google Test in Visual Studio and all I'm getting is a bunch of linker errors (or warnings). Help!": [[https://code.google.com/p/googletest/wiki/FAQ#I_am_building_my_project_with_Google_Test_in_Visual_Studio_and_a]]
+1. Using Google Test in Visual C++ 2012: [[http:_asawicki.info/news_1561_using_google_test_in_visual_c_2012.html]]
+1. (From GoogleTest FAQ), "I am building my project with Google Test in Visual Studio and all I'm getting is a bunch of linker errors (or warnings). Help!": [[https:_code.google.com/p/googletest/wiki/FAQ#I_am_building_my_project_with_Google_Test_in_Visual_Studio_and_a]]
 
