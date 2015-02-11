@@ -7,6 +7,7 @@ associated with the **Durango** repository that contains `source code`.
 
 ## Useful Links
 
-* [Tools And Resources](/ToolsAndResources.md/)
+* [Equipment](/Equipment/Readme.md)
+  * [Using Our GTest](/Equipment/TestUsingGTest.md)
 
 
