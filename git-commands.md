@@ -119,6 +119,20 @@ Merge feature onto master
   * `git commit -a -m"TR-0001-new-feature`
   * `git push origin master`
 
+> As an alternative you can checkout the feature branch, do an interactive rebase off of master to squash all commits and give a single commit message, then push directly to origin/master.
+>
+> `git checkout TR-0001-new-feature`
+>
+> `git fetch --prune` to update origin/master
+>
+> `git rebase -i origin/master`
+>
+> Pick and Squash as appropriate
+>
+> Edit commit message as appropriate
+>
+> `git push origin HEAD:master`
+
 Delete unused branches
 
   * `git branch -D TR-0001-new-feature`
