@@ -42,6 +42,30 @@ OR
 The following command causes feature brach to track origin/master - not sure that's what we want
   * `git checkout -b TR-0001-new-feature origin/master`
 
+> See http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git for comments on tracking branches. Setting the tracking branch sets the default push/pull tracking branch. Seems like we want to use `origin/TR-0001-new-feature` instead of `origin/master` as the remote tracking branch. 
+> 
+> We maybe be able to set the git config for default to be current to override the tracking branch `git config --global push.default current` -- need to investigate if this overrides tracking branch.
+> 
+> Investigation indicates the default push schema pushes to the same named remote branch instead of the origin/master. That is if you create a branch off of origin/master
+> 
+> `git checkout -b TR-0001-new-feature origin/master`
+> 
+> and then push that new feature branch to the remote
+> 
+> `git push origin TR-0001-new-feature`
+> 
+> then the default push `git push` pushes to the same named remote branch.
+> 
+> Looking at http://git-scm.com/docs/git-config the default config for push is `simple`.
+> 
+> `git config --global push.default simple`
+> 
+> `git config --global push.default current`
+>
+> The result is that it seems to be ok to branch off of origin/master and then push the new branch to the remote. The result is simple pushes will go to the similarly named remote branch.
+
+
+
 Immediately push the feature to github so it is visible to other developers.
   * `git push origin TR-0001-new-feature`
 
