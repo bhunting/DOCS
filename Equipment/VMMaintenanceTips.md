@@ -1,1 +1,0 @@
-* [Extending partitions using LVM](http://www.techrepublic.com/blog/smb-technologist/extending-partitions-on-linux-vmware-virtual-machines/); note that with LVM, the default first sector for a new partition (step 15) might be BEFORE the start of the "Extended" partition; for the new partition, select the first sector AFTER the "End" sector of the Extended partition.
