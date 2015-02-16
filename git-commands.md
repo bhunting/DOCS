@@ -39,7 +39,7 @@ OR
 
   * `git fetch -p`
 
-The following command causes feature brach to track origin/master - not sure that's what we want
+The following command causes feature branch to track origin/master
   * `git checkout -b TR-0001-new-feature origin/master`
 
 > See http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git for comments on tracking branches. Setting the tracking branch sets the default push/pull tracking branch. Seems like we want to use `origin/TR-0001-new-feature` instead of `origin/master` as the remote tracking branch. 
