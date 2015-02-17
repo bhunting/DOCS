@@ -31,6 +31,29 @@ When feature is ready to integrate into master
 
 
 ---
+#### Aliases
+
+Use `git config --global alias.XX xxxxx` to create aliases.
+
+Use `git config --global --list` to show existing global configurations, including aliases.
+
+Alternatively open `~/.gitconfig ` in an editor and look for a section labled `[alias]`.  
+
+Aliases are defined in `~/.gitconfig` as ` XX = xxxxx`.
+
+##### Define interesting aliases
+
+New Feature Branch - nfb -- fetch, checkout -b, push
+
+Commit Feature Branch - cfb -- commit -a -m
+
+Merge Master - mm -- fetch, merge, push
+
+Integrate To Master - itm -- fetch, rebase, merge --squash, commit, push
+
+Delete Feature Branch -- dfb
+
+---
 
 Git Process description
   * master branch is always buildable and deployable
