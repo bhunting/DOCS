@@ -23,6 +23,7 @@ When feature is ready to integrate into master
   * `git checkout TR-0001-new-feature`
   * `git rebase origin/master`
   * `git checkout master`
+  * `git merge origin/master` OR `git pull`
   * `git merge --squash TR-0001-new-feature`
   * `git commit -a -m"TR-0001-new-feature"`
   * `git push origin master`
