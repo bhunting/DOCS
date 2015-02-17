@@ -1,3 +1,37 @@
+tl;dr
+
+Do once per feature
+  * `git fetch -p`
+  * `git checkout -b TR-0001-new-feature origin/master`
+  * `git push origin TR-0001-new-feature`
+
+Do once per adding new files, single or group of files
+  * `git add [.][filename]`
+
+Loop as you add to feature
+  * `write code here`
+  * `git commit -a -m"commit message here"`  OR   `git commit -m"commit message here" [.][filename]`
+  * `git fetch --prune`
+  * `git merge origin/master`
+  * `git push origin TR-0001-new-feature`
+  * build and run against test suite often
+
+When feature requires discussion or is ready for integration issue a pull request on Github
+
+When feature is ready to integrate into master
+  * `git fetch --prune`
+  * `git checkout TR-0001-new-feature`
+  * `git rebase origin/master`
+  * `git checkout master`
+  * `git merge --squash TR-0001-new-feature`
+  * `git commit -a -m"TR-0001-new-feature"`
+  * `git push origin master`
+  * `git branch -D TR-0001-new-feature`
+  * `git push origin --delete TR-0001-new-feature`
+
+
+---
+
 Git Process description
   * master branch is always buildable and deployable
   * Create local branches off of origin/master
@@ -40,9 +74,7 @@ OR
   * `git fetch -p`
   * `git checkout -b TR-0001-new-feature origin/master`
 
-> See http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git for comments on tracking branches. Setting the tracking branch sets the default push/pull tracking branch. Seems like we want to use `origin/TR-0001-new-feature` instead of `origin/master` as the remote tracking branch. 
-> 
-> Set the git config for default to be current to override the tracking branch `git config --global push.default current` -- need to investigate if this overrides tracking branch.
+> See http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git for comments on tracking branches. Setting the tracking branch sets the default push/pull tracking branch. We want to use `origin/TR-0001-new-feature` instead of `origin/master` as the remote tracking branch. 
 > 
 > Investigation indicates the default push schema pushes to the same named remote branch instead of the origin/master. That is if you create a branch off of origin/master
 > 
@@ -89,7 +121,6 @@ Build and run automated tests regularly
 When you think you are done:
   * issue a pull request on github against your pushed feature branch.
 
-
 When the feature has passed review then squash and commit to master:
 
 First update local master
@@ -113,7 +144,7 @@ Merge feature onto master
   * `git checkout master`
   * `git merge --squash TR-0001-new-feature`
 
-  * `git commit -a -m"TR-0001-new-feature`
+  * `git commit -a -m"TR-0001-new-feature"`
   * `git push origin master`
 
 > As an alternative you can checkout the feature branch, do an interactive rebase off of master to squash all commits and give a single commit message, then push directly to origin/master.
@@ -129,6 +160,7 @@ Merge feature onto master
 > Edit commit message as appropriate
 >
 > `git push origin HEAD:master`
+
 
 Delete unused branches
 
