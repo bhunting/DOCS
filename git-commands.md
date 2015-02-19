@@ -42,7 +42,7 @@ Alternatively open `~/.gitconfig ` in an editor and look for a section labled `[
 
 Aliases are defined in `~/.gitconfig` as ` XX = xxxxx`.
 
-##### Define interesting aliases
+##### Define process aliases
 
 New Feature Branch - nfb -- fetch, checkout -b, push
 
