@@ -46,13 +46,27 @@ Aliases are defined in `~/.gitconfig` as ` XX = xxxxx`.
 
 New Feature Branch - nfb -- fetch, checkout -b, push
 
+`nfb = !git fetch -p && git checkout -b $1 origin/master && git push origin $2`
+
 Commit Feature Branch - cfb -- commit -a -m
 
-Merge Master - mm -- fetch, merge, push
+`cfb = !git add -A && git commit -m $2`
+
+Merge Master - mm -- fetch, merge
+
+`mm = !git fetch -p && git merge origin/master`
+
+Push Feature Branch - pfb -- push feature branch to remote
+
+`pfb = !git push origin $(git branch | grep \"*\" | cut -d \" \" -f2)`
 
 Integrate To Master - itm -- fetch, rebase, merge --squash, commit, push
 
+`TBD`
+
 Delete Feature Branch -- dfb
+
+`dfb = !git checkout master && git branch -D $1 && git push origin --delete $2`
 
 ---
 
