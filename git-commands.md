@@ -68,6 +68,7 @@ Delete Feature Branch -- dfb
 
 `dfb = !git checkout master && git branch -D $1 && git push origin --delete $2`
 
+---
 Other interesting aliases for log display
 
 `lg0 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit`
